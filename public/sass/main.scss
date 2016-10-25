@@ -1,0 +1,104 @@
+@import '_overview.scss';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.logo {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  color: #ff6352;
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 2px;
+
+  div:nth-child(2) {
+    color: #404040;
+    font-size: 0.4em;
+    text-shadow: none;
+    letter-spacing: 0;
+  }
+}
+
+.count-down {
+  background-image: url(../../dist/Totoro-Wallpaper-Imgur.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+
+    .time {
+      text-align: center;
+      font-weight: 600;
+      align-self: center;
+
+      .number {
+        width: 50px;
+        margin: 2px;
+        background-color: #D1BB6D;
+        font-size: 2em;
+        font-weight: 700;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 2px #9f8e53;
+      }
+
+      .unit {
+        font-size: 0.7em;
+        background-color: #404040;
+        color: white;
+        margin: 2px;
+      }
+    }
+  }
+}
+
+.message {
+  margin-top: 30px;
+  max-width: 220px;
+
+  .text {
+    text-align: center;
+    padding: 20px ;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #000;
+  }
+}
+
+.heart {
+  text-align: center;
+  font-size: 4em;
+  line-height: 0.6;
+  animation: pulse;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  img {
+    width: 1em;
+    height: 0.8em;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(1.5)
+  }
+}

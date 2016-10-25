@@ -1,0 +1,59 @@
+.overview {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    align-self: center;
+  }
+
+  .snapshot {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    .thumbnail {
+      align-self: center;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 8px solid #f4f4f4;
+      box-shadow: 0 2px 8px #a0a0a0;
+      background-image: url(../../dist/Totoro-Wallpaper-Imgur.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+      text-shadow: 1px 1px #585858;
+      color: white;
+      cursor: pointer;
+      transition: all 200ms;
+      &:hover {
+        transform: scale(1.1);
+        background-color: #dedede;
+        box-shadow: 0 4px 12px #c7c7c7;
+        border-color: #404040;
+      }
+    }
+
+    .elapsed {
+      line-height: 120px;
+    }
+
+    .description {
+      align-self: center;
+      margin: 16px 0;
+      font-size: 12px;
+      text-align: center;
+      max-width: 130px;
+
+      .name {
+        color: #404040;
+        font-weight: 900;
+        font-size: 12px;
+      }
+      .date {
+        color: #bbbbbb;
+      }
+    }
+  }
+}
